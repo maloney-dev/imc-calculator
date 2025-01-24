@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IMC Calculator</string>
+    <string name="calculate_button">botao_calculo</string>
+    <string name="weight_input_hint">input_peso</string>
+    <string name="height_input_hint">input_altura</string>
+</resources>

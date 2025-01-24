@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">IMC Calculator</string>
-    <string name="button">Calculate</string>
+    <string name="calculate_button">Calculate</string>
     <string name="weight_input_hint">Type your weight here. Ex: 72.30</string>
     <string name="height_input_hint">Type your height here. Ex: 1.75</string>
 </resources>
