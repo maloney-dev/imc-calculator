@@ -3,6 +3,7 @@ package com.comunidadedevspace.imc
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
@@ -25,8 +26,28 @@ class MainActivity : AppCompatActivity() {
 
         btnCalculate.setOnClickListener {
 
-            val weight = edtWeight.text
-            val height = edtHeight.text
+            val strWeight: String = edtWeight.text.toString()
+            val strHeight: String = edtHeight.text.toString()
+
+            if (strHeight == "" || strWeight == "") {
+                // Show user a mensage
+
+                Snackbar.make(
+                    edtWeight,
+                    "Fill in all fields.",
+                    Snackbar.LENGTH_LONG
+                ).show()
+            }
+            else {
+
+                val weight = edtWeight.text.toString().toFloat()
+                val height = edtHeight.text.toString().toFloat()
+
+                val height2 = height * height
+                val result = weight / height2
+
+                println(result)
+            }
         }
     }
 }
