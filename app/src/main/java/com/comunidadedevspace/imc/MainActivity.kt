@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -45,6 +46,14 @@ class MainActivity : AppCompatActivity() {
 
                 val height2 = height * height
                 val result = weight / height2
+
+                // Navigate to the next page
+                // Create new page layout
+                // Get data (results) to next page
+
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC, result)
+                startActivity(intent)
 
                 println(result)
             }
