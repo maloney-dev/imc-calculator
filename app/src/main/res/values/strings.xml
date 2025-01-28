@@ -3,4 +3,5 @@
     <string name="calculate_button">Calculate</string>
     <string name="weight_input_hint">Type your weight here. Ex: 72.30</string>
     <string name="height_input_hint">Type your height here. Ex: 1.75</string>
+    <string name="tvResultLabel">Your IMC classification is: </string>
 </resources>
