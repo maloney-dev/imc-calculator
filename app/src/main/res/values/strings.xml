@@ -1,7 +1,10 @@
 <resources>
-    <string name="app_name">IMC Calculator</string>
+    <string name="app_name">BMI Calculator</string>
     <string name="calculate_button">Calculate</string>
-    <string name="weight_input_hint">Type your weight here. Ex: 72.30</string>
-    <string name="height_input_hint">Type your height here. Ex: 1.75</string>
-    <string name="tvResultLabel">Your IMC classification is: </string>
+    <string name="weight_input_hint">Type your weight. Ex: 72.30</string>
+    <string name="height_input_hint">Type your height. Ex: 1.75</string>
+    <string name="tvResultLabel">"Your BMI classification is: "</string>
+    <string name="header_text">Fill in the fields below with your weight and height to find out your body mass index</string>
+    <string name="icon_description">Digital scale icon</string>
+    <string name="header_text_result">Check out below the result and classification of your body mass index: </string>
 </resources>
