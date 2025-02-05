@@ -9,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 
 // Create a variable to keep the intent key
 
-const val KEY_RESULT_IMC = "ResultActivity.KEY_IMC"
+const val KEY_RESULT_BMI = "ResultActivity.KEY_BMI"
 
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,18 +24,16 @@ class ResultActivity : AppCompatActivity() {
 
         // Get and display the result and IMC classification for UI component
 
-        val result = intent.getFloatExtra(KEY_RESULT_IMC, 0f)
+        val result = intent.getFloatExtra(KEY_RESULT_BMI, 0f)
 
         val resultIMC = findViewById<TextView>(R.id.tv_result)
 
-        val classificationIMC = findViewById<TextView>(R.id.tv_classification)
+        val classificationBMI = findViewById<TextView>(R.id.tv_classification)
 
         resultIMC.text = result.toString()
 
-        // Logic to IMC Labels
-        var classification: String? = null
-
-        classification = if (result <= 18.5f){
+        // Logic to BMI classification
+        var classification: String? = if (result <= 18.5f){
             "UNDERWEIGHT"
         } else if (result > 18.5f && result <= 24.9f){
             "NORMAL"
@@ -47,6 +45,6 @@ class ResultActivity : AppCompatActivity() {
             "EXTREMELY OBESE"
         }
 
-        classificationIMC.text = classification
+        classificationBMI.text = classification
     }
 }

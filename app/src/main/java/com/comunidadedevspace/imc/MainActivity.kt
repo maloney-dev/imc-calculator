@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                 // Get data (results) to next page
 
                 val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra(KEY_RESULT_IMC, result)
+                intent.putExtra(KEY_RESULT_BMI, result)
                 startActivity(intent)
 
                 println(result)

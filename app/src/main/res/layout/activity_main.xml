@@ -4,18 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:id="@+id/vg_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="24dp"
+            android:src="@drawable/weight_icn"
+            app:tint="@color/white"
+            android:contentDescription="@string/icon_description"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="14dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/header_text"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/calculate_button"
-        android:layout_width="280dp"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="68dp"
         android:text="@string/calculate_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -23,40 +64,50 @@
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="280dp"
         android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toTopOf="@id/textInputHeight"
+        android:layout_marginTop="24dp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/textInputHeight">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtWeight"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_bg"
+            android:drawableEnd="@drawable/weight_icn"
+            android:textColor="@color/black"
             android:hint="@string/weight_input_hint"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:textColorHint="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputHeight"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="655dp"
-        app:layout_constraintBottom_toTopOf="@+id/calculate_button"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputWeight">
+        app:layout_constraintTop_toBottomOf="@id/vg_header">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id = "@+id/edtInputHeight"
+            android:id="@+id/edtInputHeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:drawableEnd="@drawable/height_24dp"
             android:hint="@string/height_input_hint"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

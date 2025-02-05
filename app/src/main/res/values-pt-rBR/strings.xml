@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">IMC Calculator</string>
-    <string name="calculate_button">botao_calculo</string>
-    <string name="weight_input_hint">input_peso</string>
-    <string name="height_input_hint">input_altura</string>
+    <string name="app_name">Calculadora IMC</string>
+    <string name="calculate_button">Calcular</string>
+    <string name="weight_input_hint">Digite seu peso. Ex: 72.20</string>
+    <string name="height_input_hint">Digite sua altura. Ex: 1.75</string>
+    <string name="tvResultLabel">Sua classificação IMC é:</string>
+    <string name="header_text">Preencha os campos abaixo com seu peso e altura para descobrir seu índice de massa corporal</string>
+    <string name="icon_description">Ícone balança digital</string>
+    <string name="header_text_result">Confira abaixo o resultado e a sua classificação:</string>
 </resources>
