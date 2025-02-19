@@ -2,7 +2,10 @@
 ##### Esse é um projeto de desenvolvimento mobile para Android nativo, utilizando a linguaguem de programação Kotlin.
 
 # BMI Calculator
-##### This is a mobile project developed in Android native, using Kotling programming language.
+##### This is a mobile project developed in Android native, using Kotling programming language. 
+✔️ Friendly UI
+✔️ ViewBinding
+✔️ English and Brazilian Portuguese versions.
 
 ## :camera_flash: Screenshots
 
